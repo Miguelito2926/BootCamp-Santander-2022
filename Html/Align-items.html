@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Fundamentos Align-items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 2px  solid blue;
+            display: flex;
+        }
+
+        .item{
+            background-color: chartreuse;
+            margin: 5px;
+            color: black;
+            text-align: center;
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .strectch{
+            align-items: stretch;
+        }
+
+        .start{
+            align-items: flex-start;
+        }
+
+        .end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Exemplos em row (linha)</h1>
+
+    <h1>center</h1>
+<section class="container center ">
+<div class="item">lorem 12</div>
+<div class="item">teste lorem</div>
+<div class="item">item 3</div>
+</section>
+
+<h1>strectch</h1>
+<section class="container strectch">
+<div class="item">lorem 12</div>
+<div class="item">teste lorem ghf</div>
+<div class="item">item 3</div>
+</section>
+
+<h1>Flex-start</h1>
+<section class="container start">
+<div class="item">lorem 12</div>
+<div class="item">teste lorem ghf</div>
+<div class="item">item 3</div>
+</section>
+
+<h1>Flex-end</h1>
+<section class="container end">
+<div class="item">lorem 12</div>
+<div class="item">teste lorem ghf</div>
+<div class="item">item 3</div>
+</section>
+
+<h1>Baseline</h1>
+<section class="container baseline">
+<div class="item"> <br>lorem 12</div>
+<div class="item">teste lorem ghf</div>
+<div class="item">item 3</div>
+</section>
+
+<br>
+
+<h1>Exemplos em column (coluna)</h1>
+
+    <h1>center</h1>
+<section class="container center column">
+<div class="item">lorem 12</div>
+<div class="item">teste lorem</div>
+<div class="item">item 3</div>
+</section>
+
+<h1>strectch</h1>
+<section class="container strectch column">
+<div class="item">lorem 12</div>
+<div class="item">teste lorem ghf</div>
+<div class="item">item 3</div>
+</section>
+
+<h1>Flex-start</h1>
+<section class="container start column">
+<div class="item">lorem 12</div>
+<div class="item">teste lorem ghf</div>
+<div class="item">item 3</div>
+</section>
+
+<h1>Flex-end</h1>
+<section class="container end column">
+<div class="item">lorem 12</div>
+<div class="item">teste lorem ghf</div>
+<div class="item">item 3</div>
+</section>
+
+<h1>Baseline</h1>
+<section class="container baseline column">
+<div class="item"> <br>lorem 12</div>
+<div class="item">teste lorem ghf</div>
+<div class="item">item 3</div>
+</section>
+
+<p>Alinhamento central à tela</p>
+<section class="container central center">
+<div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nesciunt ducimus praesentium </div>
+</section>
+
+
+</body>
+</html>
