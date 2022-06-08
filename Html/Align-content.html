@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Align content</title>
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border:2px solid blue;
+        }
+
+        .item{
+            background-color: darksalmon;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: black;
+            border: 2px solid red;
+        }
+
+        .stretch{
+            align-content: strectch;
+        }
+
+        .center{
+            align-content: center;
+        }
+        
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>strectch</p>
+    <div class="container strectch">
+        <div class="item">teste um</div>
+        <div class="item">teste dois</div>
+        <div class="item">teste 3</div>
+        <div class="item">testando tudo com texto longo</div>
+        <div class="item">teste</div>
+        <div class="item">outro teste</div>
+        <div class="item">mais um</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">teste um</div>
+        <div class="item">teste dois</div>
+        <div class="item">teste 3</div>
+        <div class="item">testando tudo com texto longo</div>
+        <div class="item">teste</div>
+        <div class="item">outro teste</div>
+        <div class="item">mais um</div>
+    </div>
+
+    
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">teste um</div>
+        <div class="item">teste dois</div>
+        <div class="item">teste 3</div>
+        <div class="item">testando tudo com texto longo</div>
+        <div class="item">teste</div>
+        <div class="item">outro teste</div>
+        <div class="item">mais um</div>
+    </div>
+
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">teste um</div>
+        <div class="item">teste dois</div>
+        <div class="item">teste 3</div>
+        <div class="item">testando tudo com texto longo</div>
+        <div class="item">teste</div>
+        <div class="item">outro teste</div>
+        <div class="item">mais um</div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">teste um</div>
+        <div class="item">teste dois</div>
+        <div class="item">teste 3</div>
+        <div class="item">testando tudo com texto longo</div>
+        <div class="item">teste</div>
+        <div class="item">outro teste</div>
+        <div class="item">mais um</div>
+    </div>
+
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">teste um</div>
+        <div class="item">teste dois</div>
+        <div class="item">teste 3</div>
+        <div class="item">testando tudo com texto longo</div>
+        <div class="item">teste</div>
+        <div class="item">outro teste</div>
+        <div class="item">mais um</div>
+    </div>
+</body>
+</html>
