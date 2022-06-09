@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos flex-shrink</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 2px solid blue;
+            max-width: 350px;
+            margin-bottom: 10px;
+        }
+
+        .item{
+            background-color: crimson;
+            font-size: 25px;
+            text-align: center;
+            margin: 5px;
+            flex: 1;
+        }
+
+        .s-1{
+            flex-shrink:1;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .s-0{
+            flex-shrink: 0;
+            flex-basis: 200px;
+        }
+
+        .s-2{
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+
+        .s-3{
+            flex-shrink: 3;
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <p>flex-shrink: 1</p>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+    </div>
+
+    <p>flex-shrink: 1</p>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">Ednaldo </div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+    </div>
+
+    <p>flex-shrink: 0 / basis em 100px</p>
+    <div class="flex-container">
+        <div class="item s-0 fg-1">A</div>
+        <div class="item s-0 fg-1">Ednaldo</div>
+        <div class="item s-0 fg-1">Tavares</div>
+        <div class="item s-0 fg-1">D</div>
+        <div class="item s-0 fg-1">E</div>
+    </div>
+
+    <p>flex-shrink: mix / basis em 100px</p>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">Ednaldo</div>
+        <div class="item s-2 fg-1">Tavares</div>
+        <div class="item s-3 fg-1">D</div>
+        <div class="item s-0 fg-1">E</div>
+    </div>
+
+</body>
+</html>
